@@ -27,7 +27,9 @@ class ArticlesController < ApplicationController
         end    
         #render plain: params[:article].inspect
     end
-
+    def userless_controller
+        puts 'nothing'
+    end
     def update
       @article = Article.find(params[:id])
      
